@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "pixel";
+  src: url(./font/I-pixel-u.ttf) format(truetype);
+}
+
+@font-face{
+  font-family: "rainyhearts";
+  src: url(./font/rainyhearts.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "upheavvtt";
+  src: url(./font/upheavtt.ttf) format(truetype);
+}
+
+:root{
+  --cor1: #ffffff;
+  --cor2: #1c1c1c;
+  --cortitulo:#00ff7f;
+  --fontprincipal:"pixel",sans-serif;
+  --fontsecundaria:"rainyhearts";
+  --fontalternativa:"upheavvtt";
+}
+
+body{
+  height: 100vh;
+  background: var(--cor2);
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.cabecalho{
+  font-family: var(--fontalternativa);
+  font-size: 2em;
+  color: var(--cortitulo);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 2%;
+}
+
+.cabecalho h1{
+  letter-spacing: 1px;
+}
+
+.cabecalho img{
+  max-width: 700px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
+.container_texto{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 2% 2% 4%;
+}
+
+.container_texto .input{
+  width: 400px;
+  height: 330px;
+}
+
+.container_texto .input p{
+  font: normal normal 1.1em var(--fontsecundaria);
+  color: var(--cortitulo);
+  margin: 2%;
+}
+
+#input_texto{
+  width: 320px;
+  height: 330px;
+  margin-top: -3px;
+  font-size: 20px;
+  color: var(--cortitulo);
+  background: #ffffff3d;
+  box-shadow: none;
+  border: 3px solid var(--cortitulo);
+  border-radius: 20px;
+  outline: 0;
+  padding: 10px;
+  text-transform: lowercase;
+}
+
+#input_texto::placeholder{
+  color: var(--cortitulo);
+  font-size: 1.5em;
+  font-family: var(--fontsecundaria);
+}
+
+.container_texto_img{
+  border: 3px solid var(--cortitulo);
+  border-radius: 10px 30px;
+  padding: 1%;
+}
+
+.container_texto_img img{
+  width: 450px;
+}
+
+#output{
+  display: flex;
+  flex-direction: column;
+  background: #ffffff3d;;
+  border: 3px solid var(--cortitulo);
+  border-radius: 20px;
+  width: 345px;
+  height: 400px;
+  margin-right: 3%;
+}
+
+#output h2{
+  font-family: var(--fontsecundaria);
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--cortitulo);
+  padding: 1%;
+}
+
+#output span{
+  font-family: var(--fontsecundaria);
+  color: var(--cortitulo);
+  font-size: 16px;
+  text-align: center;
+}
+
+.container-btn button{
+  font-family: var(--fontsecundaria);
+  font-size: 1.5em;
+  font-weight: bolder;
+  background-color: var(--cor2);
+  border: 3px solid var(--cortitulo);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--cortitulo);
+  width: 200px;
+  height: 50px;
+  margin-left: 4%;
+  cursor: pointer;
+}
+
+.btn-copiar{
+  font-size: 1.5em;
+  font-family: var(--fontsecundaria);
+  border: 3px solid var(--cortitulo);
+  background-color: var(--cor2);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--cortitulo);
+  width: 150px;
+  height: 50px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+.container-btn button:hover{
+  font-family: var(--fontsecundaria);
+  background-color: var(--cortitulo);
+  color: var(--cor2);
+  border: 5px solid var(--cor2);
+  transition: 0.5s all;
+}
+
+
+.rodape{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin-top: 30px;
+  background: var(--cortitulo);
+  color: var(--cor2);
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.rodape h3{
+  font-family: var(--fontsecundaria);
+  font-size: 16px;
+}
+
+.icons ion-icon{
+    width: 25px;
+    height: 25px;
+    color: var(--cor2);
+}
+
+.icons ion-icon:hover {
+  color: var(--cor1);
+}
+
+@media only screen and (max-width: 768px) {
+  .container_texto {
+    flex-direction: column;
+  }
+
+  .container_texto .input {
+    width: 100%;
+  }
+
+  .container_texto .input p {
+    margin: 2% 0;
+  }
+
+  #input_texto {
+    width: 100%;
+  }
+
+  .container_texto_img img {
+    width: 100%;
+  }
+}
+
+/* Mídia query para celulares */
+@media only screen and (max-width: 480px) {
+  .cabecalho {
+    font-size: 1.5em;
+  }
+
+  .cabecalho img {
+    max-width: 300px;
+    max-height: 50px;
+  }
+
+  .container_texto .input {
+    width: 100%;
+  }
+
+  #input_texto {
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+  }
+
+  .container_texto_img img {
+    width: 100%;
+    border-radius: 10px 30px;
+  }
+
+  #output {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  #output h2 {
+    font-size: 20px;
+  }
+
+  #output span {
+    font-size: 14px;
+  }
+
+  .container-btn button {
+    width: 150px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+
+  .btn-copiar {
+    width: 120px;
+    height: 40px;
+    font-size: 1.2em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+  }
+
+  .rodape {
+    position: relative; 
+    bottom: auto; 
+    width: 100%;
+    margin-top: 30px; /* Ajusta a margem superior */
+    padding: 20px 0; /* Ajusta o preenchimento */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+}

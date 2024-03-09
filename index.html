@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlleng Codificador</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <main class="main container">
+      <header class="cabecalho">
+         <h1>Codificador</h1>
+      </header>
+      <div class="container_texto">
+        <div class="input">
+          <textarea id="input_texto" placeholder="Digite a sua mensagem..."></textarea>
+          <p>Atençao apenas letras minusculas e sem acento</p>
+        </div>
+        
+          <div class="container_texto_img">
+            <img src="img/img_principal.jpg" alt="logo">
+          </div>
+          
+          <div id="output">
+          <h2>Sua mensagem aparecerá aqui!</h2>
+          <span>Digite um texto que deseja criptografar ou descriptografar.</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="container-btn">
+          <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+          <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="icons">
+          <a href="https://github.com/hugobrambati"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/hugo-brambati/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <h3>Desenvolvido por Hugo Brambati</h3>
+    </footer>
+
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
